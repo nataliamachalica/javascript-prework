@@ -1,0 +1,58 @@
+/*Variables*/
+$font-main: 'Dosis', sans-serif;
+$font-family: 'Inconsolata', monospace;
+
+
+/*Global*/
+*, *::before, *::after {
+        box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 20px 30px;
+  padding: 25px;
+}
+h1 {
+  font-size: 59px;
+  font-family: $font-main;
+}
+h2 {
+  font-size: 40px;
+  font-family: $font-family; 
+}
+button {
+  height: 80px;
+  width: 100px;
+  font-size: 20px;
+  color: #330c57;
+  margin: 20px 20px;
+  padding: 12px 10px;
+  border-radius: 15%;
+  border-style: none;
+  -webkit-box-shadow: 5px 5px 25px #13110d;
+          box-shadow: 5px 5px 25px #0a0a09;
+  background-color: #c0a3c9;
+  text-align: center;
+  font-size: 25px;
+}
+
+button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+
+#messages {
+  font-size: 25px;
+  font-family: Dosis;
+  color: #130f40;
+  line-height: 50px;
+}
