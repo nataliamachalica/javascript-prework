@@ -1,26 +1,24 @@
-function playGame(playerInput){
+{
+    const playGame = function(playerInput){
     clearMessages();
-    function getMoveName(argMoveId){
+    const getMoveName = function(argMoveId){
         if(argMoveId == 1){
             return 'kamień';
         }else if(argMoveId == 2){
             return 'papier';
         }else if(argMoveId == 3){
             return 'nożyce';
-        }else{
-            printMessage('Nie znam ruchu o id ' + argMoveId + '.');
-            return 'nieznany ruch';
-            }
-    }
-    let randomNumber = Math.floor(Math.random() * 3 + 1);
-        console.log('Wylosowana liczba to: ' + randomNumber);
-    let argComputerMove = getMoveName(randomNumber);
+        }
+    };
+    const randomNumber = Math.floor(Math.random() * 3 + 1);
+        /*console.log('Wylosowana liczba to: ' + randomNumber);*/
+    const argComputerMove = getMoveName(randomNumber);
         printMessage('mój ruch to: ' + argComputerMove);
-    let argPlayerMove = getMoveName(playerInput);
+    const argPlayerMove = getMoveName(playerInput);
         printMessage('twój ruch to: ' + argPlayerMove);
     
-    function displayResult(argComputerMove, argPlayerMove){
-            console.log('moves: ' + argComputerMove + ', ' + argPlayerMove);
+    const displayResult = function(argComputerMove, argPlayerMove){
+            /*console.log('moves: ' + argComputerMove + ', ' + argPlayerMove);*/
         if (
             (argComputerMove == 'kamień' && argPlayerMove == 'papier') || 
             (argComputerMove == 'papier' && argPlayerMove == 'nożyce') || 
@@ -34,15 +32,13 @@ function playGame(playerInput){
         ){
         printMessage('wygrywam!');
         }else if (
-            (argComputerMove == 'kamień' && argPlayerMove == 'kamień') ||
-            (argComputerMove == 'papier' && argPlayerMove == 'papier') ||
-            (argComputerMove == 'nożyce' && argPlayerMove == 'nożyce')
+            (argComputerMove == argPlayerMove)
         ){
         printMessage('remis!');
         }else {
         printMessage('wybierz liczbę od 1 do 3!');
         }
-    }
+    };
     displayResult(argComputerMove, argPlayerMove);
 }
     document.getElementById('rock').addEventListener('click', function(){
@@ -54,3 +50,4 @@ function playGame(playerInput){
     document.getElementById('scissors').addEventListener('click', function(){
         playGame(3); 
     });
+}
