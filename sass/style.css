@@ -19,13 +19,18 @@ body {
 }
 
 h1 {
-  font-size: 59px;
+  font-size: 90px;
   font-family: "Dosis", sans-serif;
+  color:rgb(106, 93, 116);
+  text-shadow: 4px 0 rgb(173, 145, 194);
+  letter-spacing: 16px;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 70px;
+  color: whitesmoke;
   font-family: "Inconsolata", monospace;
+  text-shadow: -2px -2px whitesmoke;
 }
 
 button {
@@ -49,11 +54,27 @@ button:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
-
-#messages {
-  font-size: 25px;
+#player-score h3 {
+  font-size: 45px;
   font-family: Dosis;
-  color: #130f40;
+  color:rgb(107, 131, 161);
+  font-weight: bold;
+  float: left;
+  text-shadow: -1px 0 whitesmoke;
+}
+#computer-score h3 {
+  font-size: 45px;
+  font-family: Dosis;
+  color:rgb(107, 131, 161);
+  font-weight: bold;
+  float: right;
+  text-shadow: -1px 0 whitesmoke;
+}
+#messages {
+  font-size: 35px;
+  font-family: Dosis;
+  color: #3d3969;
   line-height: 50px;
+  text-shadow: -2px 0 whitesmoke;
 }
 /*# sourceMappingURL=style.css.map */
