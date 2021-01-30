@@ -16,18 +16,17 @@
         printMessage('mój ruch to: ' + argComputerMove);
     const argPlayerMove = getMoveName(playerInput);
         printMessage('twój ruch to: ' + argPlayerMove);
-    
     const displayResult = function(argComputerMove, argPlayerMove){
             /*console.log('moves: ' + argComputerMove + ', ' + argPlayerMove);*/
         if (
-            (argComputerMove == 'kamień' && argPlayerMove == 'papier') || 
-            (argComputerMove == 'papier' && argPlayerMove == 'nożyce') || 
+            (argComputerMove == 'kamień' && argPlayerMove == 'papier') ||
+            (argComputerMove == 'papier' && argPlayerMove == 'nożyce') ||
             (argComputerMove == 'nożyce' && argPlayerMove == 'kamień')
         ){
         printMessage('wygrywasz!');
         }else if (
-            (argComputerMove == 'papier' && argPlayerMove == 'kamień') || 
-            (argComputerMove == 'nożyce' && argPlayerMove == 'papier') || 
+            (argComputerMove == 'papier' && argPlayerMove == 'kamień') ||
+            (argComputerMove == 'nożyce' && argPlayerMove == 'papier') ||
             (argComputerMove == 'kamień' && argPlayerMove == 'nożyce')
         ){
         printMessage('wygrywam!');
@@ -48,6 +47,6 @@
         playGame(2);
     });
     document.getElementById('scissors').addEventListener('click', function(){
-        playGame(3); 
+        playGame(3);
     });
 }
