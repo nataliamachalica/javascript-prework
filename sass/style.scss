@@ -20,14 +20,64 @@ body {
   margin: 20px 30px;
   padding: 25px;
 }
+
+  #scores {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .player-score {
+    h2 {
+      font-size: 42px;
+      font-family: $font-main;
+      color: #9d8bad;
+      font-weight: 700;
+      text-shadow: 2px 2px #eae8ec;
+    }
+    p {
+      font-size: 40px;
+      font-family: $font-main;
+      color: #dfccf0;
+      font-weight: 700;
+      text-shadow: 1.5px 1.5px #eae8ec;
+    }
+  }
+
+  .computer-score {
+    h2 {
+      font-size: 42px;
+      font-family: $font-main;
+      color: #9d8bad;
+      font-weight: 700;
+      text-shadow: 2px 2px #eae8ec;
+    }
+    p {
+      font-size: 40px;
+      font-family: $font-main;
+      color: #dfccf0;
+      font-weight: 700;
+      text-shadow: 1.5px 1.5px #eae8ec;
+    }
+  }
+
 h1 {
   font-size: 59px;
   font-family: $font-main;
+  font-weight: 700;
+  color: #c0a3c9;
+  text-shadow: 1px 1px #eae8ec;
 }
+
 h2 {
-  font-size: 40px;
-  font-family: $font-family; 
+  font-size: 43px;
+  font-family: $font-family;
+  color: #a370b3;
+  text-shadow: 2px 2px #eae8ec;
+  font-weight: 400;
+
 }
+
 button {
   height: 80px;
   width: 100px;
@@ -51,8 +101,10 @@ button:hover {
 }
 
 #messages {
-  font-size: 25px;
-  font-family: Dosis;
-  color: #130f40;
+  font-size: 45px;
+  font-family: $font-family;
+  color: #c18ed1;
+  text-shadow: 2px 2px #eae8ec;
   line-height: 50px;
+  font-weight: bold;
 }

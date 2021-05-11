@@ -18,19 +18,64 @@ body {
   padding: 25px;
 }
 
-h1 {
-  font-size: 90px;
+#scores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.player-score h2 {
+  font-size: 42px;
   font-family: "Dosis", sans-serif;
-  color:rgb(106, 93, 116);
-  text-shadow: 4px 0 rgb(173, 145, 194);
-  letter-spacing: 16px;
+  color: #9d8bad;
+  font-weight: 700;
+  text-shadow: 2px 2px #eae8ec;
+}
+
+.player-score p {
+  font-size: 40px;
+  font-family: "Dosis", sans-serif;
+  color: #dfccf0;
+  font-weight: 700;
+  text-shadow: 1.5px 1.5px #eae8ec;
+}
+
+.computer-score h2 {
+  font-size: 42px;
+  font-family: "Dosis", sans-serif;
+  color: #9d8bad;
+  font-weight: 700;
+  text-shadow: 2px 2px #eae8ec;
+}
+
+.computer-score p {
+  font-size: 40px;
+  font-family: "Dosis", sans-serif;
+  color: #dfccf0;
+  font-weight: 700;
+  text-shadow: 1.5px 1.5px #eae8ec;
+}
+
+h1 {
+  font-size: 59px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  color: #c0a3c9;
+  text-shadow: 1px 1px #eae8ec;
 }
 
 h2 {
-  font-size: 70px;
-  color: whitesmoke;
+  font-size: 43px;
   font-family: "Inconsolata", monospace;
-  text-shadow: -2px -2px whitesmoke;
+  color: #a370b3;
+  text-shadow: 2px 2px #eae8ec;
+  font-weight: 400;
 }
 
 button {
@@ -54,27 +99,12 @@ button:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
-#player-score h3 {
-  font-size: 45px;
-  font-family: Dosis;
-  color:rgb(107, 131, 161);
-  font-weight: bold;
-  float: left;
-  text-shadow: -1px 0 whitesmoke;
-}
-#computer-score h3 {
-  font-size: 45px;
-  font-family: Dosis;
-  color:rgb(107, 131, 161);
-  font-weight: bold;
-  float: right;
-  text-shadow: -1px 0 whitesmoke;
-}
+
 #messages {
-  font-size: 35px;
-  font-family: Dosis;
-  color: #3d3969;
+  font-size: 45px;
+  font-family: "Inconsolata", monospace;
+  color: #c18ed1;
+  text-shadow: 2px 2px #eae8ec;
   line-height: 50px;
-  text-shadow: -2px 0 whitesmoke;
+  font-weight: bold;
 }
-/*# sourceMappingURL=style.css.map */

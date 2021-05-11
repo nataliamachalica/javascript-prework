@@ -5,12 +5,24 @@
     <link rel="stylesheet" href="sass/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kamień, papier, nożyce</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Inconsolata:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
-<body background="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-	<div class="container">
+<body background="https://images.pexels.com/photos/985266/pexels-photo-985266.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+	<section class="game">
+        <div id="scores">
+            <div class="player-score">
+                <h2>JA</h2>
+                <p>0</p>
+            </div>
+            <div class="computer-score">
+                <h2>KOMPUTER</h2>
+                <p>0</p>
+            </div>
+        </div>
+    </section>
+    <section class="container">
         <h1>zagrajmy</h1>
         <h2>wybierz ruch</h2>
         <div id="buttons">
@@ -19,7 +31,7 @@
             <button id="scissors"><i class="fas fa-hand-peace"></i></button>
         </div>
         <div id="messages"></div>
-    </div>
+    </section>
     <script src="js/functions.js"></script>
     <script src="js/script.js"></script>
 </body>
